@@ -1,0 +1,1676 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-padding-top: 70px;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  /* background-color: bisque; */
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  color: white;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  /* padding: 0px 100px 0px 100px; */
+  /* backdrop-filter: blur(10px) brightness(1.2); */
+}
+
+.header .brand {
+  width: 20%;
+  /* background-color: red; */
+  padding-left: 100px;
+}
+
+.header .list {
+  width: 60%;
+  /* background-color: blue; */
+  padding-right: 100px;
+}
+
+.header #logo {
+  width: 15%;
+  /* background-color: green; */
+  padding-right: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* cursor: pointer; */
+}
+
+.header .brand,
+.header .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header .brand a .logo {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  backdrop-filter: blur(10px) brightness(1.2);
+  margin-right: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.header .brand a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  /* font-weight: bold; */
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .list ul li,
+.header .list ul li a {
+  float: left;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  margin: auto 11px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+}
+
+.header .list ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+#home {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  color: white;
+  padding: 120px 0px 0px 0px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #243b55, #141e30);
+}
+
+#home .description {
+  width: 50%;
+  /* background-color: red; */
+  float: left;
+  padding-left: 200px;
+  padding-top: -50px;
+}
+
+#home .description .p {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+#home .description p {
+  color: rgb(208, 207, 207);
+}
+
+#home .description .p .txt,
+#home .description .p .text {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+#home .description .p .dottt {
+  background: linear-gradient(
+    135deg,
+    #ff00c8,
+    #ff7300,
+    #9b005d,
+    #18dd22,
+    #ffff0f,
+    #002bff,
+    #7a00ff,
+    #ff00c8
+  );
+  animation: gradientAnimation 0.2s ease-in-out infinite;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  background-clip: text;
+}
+
+#home .description .p span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(121, 116, 215);
+  font-size: 50px;
+  background: linear-gradient(
+    135deg,
+    #ff00c8,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ffffff,
+    #2b00ff,
+    #ff00c8,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 20s ease-in-out infinite;
+  background-size: 800% 800%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#home .description .p .bc {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(59, 59, 61);
+}
+
+#home .description .p2 {
+  line-height: 25px;
+  font-size: 18px;
+}
+/* .introduce .description button{
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 7px;
+} */
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(135deg, #243b55, #141e30);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+/* .glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+} */
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1460e4, #3b007a);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#home .profile {
+  width: 30%;
+  /* background-color: blue; */
+  float: left;
+}
+
+#home .profile img {
+  width: 400px;
+  border-radius: 50%;
+  margin-top: -40px;
+  border: 10px solid blue;
+}
+
+#aboutme {
+  width: 100%;
+  height: 320px;
+  color: white;
+  padding: 30px 0px 0px 0px;
+  background: linear-gradient(135deg, #243b55, #141e30);
+}
+
+#aboutme h1,
+#myskill h1,
+#myproject h1,
+#mycontact h1 {
+  padding: 0px 0px 30px 150px;
+  font-size: 30px;
+}
+
+#aboutme .des {
+  width: 80%;
+  height: 170px;
+  border-radius: 15px;
+  border: 1px solid #293e3a;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px #06192f;
+  background: linear-gradient(135deg, #06192f, #141e30);
+}
+
+#aboutme .des p {
+  padding: 10px 30px 20px 30px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+/* From Uiverse.io by iZOXVL */
+.boton-elegante {
+  padding: 10px 30px;
+  border: 2px solid #266676;
+  background: linear-gradient(135deg, #06192f, #141e30);
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(64, 102, 206, 0.25) 0%, #06192f 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+/* #myskill {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  color: white;
+
+  background: linear-gradient(135deg, #243b55, #141e30);
+} */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.chip {
+  height: 20px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #293e3a;
+  background: linear-gradient(135deg, #06192f, #141e30);
+}
+
+#myskill {
+  width: 100%;
+  height: 220px;
+  color: white;
+  padding: 30px 0px 0px 0px;
+  background: linear-gradient(135deg, #243b55, #141e30);
+}
+
+#myskill .skills {
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid #293e3a;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px #06192f;
+  background: linear-gradient(135deg, #06192f, #141e30);
+}
+
+#myproject {
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  padding: 30px 0px 30px 0px;
+  background: linear-gradient(135deg, #243b55, #141e30);
+}
+
+#myproject .skills {
+  width: 80%;
+  /* height: 100px; */
+  /* border-radius: 15px; */
+  /* border: 1px solid #293e3a; */
+  margin: auto;
+  /* padding: 20px; */
+  /* box-shadow: 0px 0px 20px 0px #06192f; */
+  /* background: linear-gradient(135deg, #06192f, #141e30); */
+  display: grid;
+} 
+
+#myproject .skills details {
+  /* margin: 10px; */
+  padding: 15px;
+  border: 1px solid #293e3a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #06192f;
+  background: linear-gradient(135deg, #06192f, #141e30);
+}
+
+#myproject .skills details summary {
+  font-size: 20px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  outline: none;
+}
+#myproject .skills details .project {
+  margin: 10px 0px 0px 20px;
+  font-size: 18px;
+  /* font-weight: bold; */
+}
+#myproject .skills details .project a {
+  text-decoration: none;
+  color: #1460e4;
+}
+
+
+#mycontact {
+  width: 100%;
+  height: 550px;
+  color: white;
+  padding: 30px 0px 0px 0px;
+  background: linear-gradient(135deg, #243b55, #141e30);
+}
+
+#mycontact .ctrl {
+  width: 80%;
+  height: 250px;
+  margin: auto;
+  /* padding: 10px ; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#mycontact .ctrl .box1 {
+  width: 49.5%;
+  height: 420px;
+  border-radius: 15px;
+  border: 1px solid #293e3a;
+  box-shadow: 0px 0px 20px 0px #06192f;
+  background: linear-gradient(#06192f);
+}
+
+#mycontact .ctrl .box2 {
+  width: 49.5%;
+  height: 420px;
+  border-radius: 15px;
+  border: 1px solid #293e3a;
+  box-shadow: 0px 0px 20px 0px #06192f;
+  background: linear-gradient(135deg, #06192f, #141e30);
+}
+
+#mycontact .ctrl .box1 table {
+  padding: 30px;
+}
+
+#mycontact .ctrl .box1 table tr td label {
+  font-size: 18px;
+}
+
+#mycontact .ctrl .box1 table tr td input {
+  width: 530px;
+  height: 33px;
+  border-radius: 10px;
+  margin: 9px auto;
+  padding: 5px;
+  border: 1px solid #293e3a;
+  /* background: linear-gradient(  #06192f); */
+  background-color: #06192f;
+  color: rgb(255, 255, 255);
+}
+
+#mycontact .ctrl .box1 table tr td textarea {
+  width: 530px;
+  height: 90px;
+  border-radius: 10px;
+  margin: 5px auto;
+  padding: 10px 0px 0px 10px;
+  border: 1px solid #293e3a;
+  background: linear-gradient(#06192f);
+  color: white;
+}
+
+#mycontact .ctrl .box2 .text {
+  padding: 30px;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+}
+
+#mycontact .ctrl .box2 .text span {
+  margin-bottom: 13px;
+  /* padding: 30px 0px 0px 30px; */
+}
+
+#mycontact .ctrl .box2 .text span:last-child {
+  color: gray;
+}
+
+#mycontact .ctrl .box2 .text span:first-child {
+  .fa-phone {
+    color: red;
+  }
+}
+
+#mycontact .ctrl .box2 .text span:nth-child(4) a {
+  color: blue;
+}
+
+#mycontact .ctrl .box2 .text span:nth-child(3) {
+  .fa-location-dot {
+    color: red;
+  }
+}
+
+.footer {
+  color: rgb(177, 175, 175);
+  width: 100%;
+  height: auto;
+  background-color: rgb(12, 10, 36);
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid rgb(80, 80, 80);
+}
+
+#mycontact .ctrl .box1 table tr td .input:last-child {
+  background-color: #1460e4;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 15px;
+}
+
+#mycontact .ctrl .box1 table tr td .input:last-child:hover {
+  background-color: #2765d0;
+  border: 1px solid #b6afaf;
+}
+
+.container .header #logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* border: 2px solid white; */
+  cursor: pointer;
+}
+
+.container .header #logo img:hover {
+  /* box-shadow: 0 0 10px 2px white; */
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#contact {
+  width: 500px;
+  height: auto;
+  max-height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  border-radius: 10px;
+
+  position: fixed;
+  z-index: 1001;
+  top: 10%;
+  left: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: auto;
+  overflow-y: auto;
+
+  box-shadow: 0px 0px 20px 0px #06192f;
+  background: linear-gradient(135deg, #06192f, #141e30);
+
+  transform: translateY(-120%);
+  transition: transform 0.05s ease-in-out;
+}
+
+#contact.active {
+  transform: translateX(120%);
+  z-index: 1111;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  /* filter: blur(5px); */
+  z-index: 1000;
+  display: none;
+  backdrop-filter: blur(2px);
+}
+#overlay.active {
+  display: block;
+}
+
+body.blur #content {
+  filter: blur(5px);
+  pointer-events: none; /* optional: prevent clicking content */
+  user-select: none; /* optional: prevent selecting text */
+}
+
+#contact h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact form {
+  width: 80%;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#contact form input {
+  width: 400px;
+  height: 35px;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: linear-gradient(135deg, #06192f, #141e30);
+  color: white;
+}
+
+#contact form textarea {
+  width: 400px;
+  height: 100px;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: linear-gradient(135deg, #06192f, #141e30);
+  color: white;
+}
+
+#contact form button {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1460e4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact form hr {
+  border: 1px solid gray;
+  margin: 20px 0px;
+  width: 105%;
+  margin: 20px auto;
+}
+
+#contact form button:hover {
+  background-color: #2765d0;
+  border: 1px solid #ffffff;
+}
+
+#contact .info {
+  width: 80%;
+  color: rgb(195, 194, 194);
+  font-family: "Courier New", Courier, monospace;
+  /* margin-top: 20px; */
+}
+
+#contact .download {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  /* background-color: red; */
+  width: 100%;
+  text-align: center;
+}
+
+#contact .download a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #06192f, #141e30);
+}
+
+#contact .download a button {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header {
+    padding: 0px 60px 0px 60px;
+  }
+  .header .brand {
+    width: 21%;
+    padding-left: 60px;
+  }
+  .header .brand a h1 {
+    font-size: 22px;
+  }
+  .header .list {
+    width: 62%;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+  }
+  .header .list ul li,
+  .header .list ul li a {
+    font-size: 18px;
+    margin: auto 10px;
+  }
+  .header #logo {
+    width: 12%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  #home {
+    padding: 110px 0px 0px 0px;
+    min-height: unset;
+    height: fit-content;
+  }
+  #home .description {
+    width: 60%;
+    float: left;
+    padding-left: 120px;
+    text-align: left;
+  }
+  #home .description .p {
+    font-size: 38px;
+  }
+  #home .description .p .txt,
+  #home .description .p .text {
+    font-size: 38px;
+  }
+  #home .description .p span {
+    font-size: 48px;
+  }
+  #home .description .p2 {
+    font-size: 19px;
+  }
+  #home .description button {
+    width: 180px;
+    height: 46px;
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+  #home .profile {
+    width: 30%;
+    float: left;
+    display: block;
+  }
+  #home .profile img {
+    width: 320px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 8px solid blue;
+  }
+
+  #aboutme {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  #aboutme .des {
+    height: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutme .des p {
+    font-size: 19px;
+    line-height: 1.7;
+    padding: 10px 0px 30px 0px;
+    text-indent: 20px;
+    text-align: center;
+    word-break: break-word;
+    letter-spacing: 0.2px;
+    color: #e0e0e0;
+    background: rgba(20, 30, 48, 0.15);
+    border-radius: 8px;
+  }
+  #aboutme .des a button {
+    width: 180px;
+    height: 40px;
+    font-size: 19px;
+    margin-left: 10px;
+  }
+  #myskill {
+    height: auto;
+    padding: 20px;
+  }
+  #myskill .skills {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #myskill h1 {
+    padding: 20px 0px 0px 20%;
+    font-size: 29px;
+  }
+  .skills .chip {
+    height: 25px;
+    padding: 8px 12px;
+    font-size: 17px;
+  }
+  #mycontact {
+    height: auto;
+  }
+  #mycontact .ctrl {
+    width: 85%;
+    height: auto;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  #myproject .skills {
+    width: 80%;
+    margin: auto;
+    display: grid;
+  }
+
+  #myproject .skills details {
+    padding: 15px;
+    border: 1px solid #293e3a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #06192f;
+    background: linear-gradient(135deg, #06192f, #141e30);
+  }
+
+  #myproject .skills details summary {
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  #myproject .skills details .project {
+    margin: 10px 0px 0px 20px;
+    font-size: 18px;
+  }
+
+  #myproject .skills details .project a {
+    text-decoration: none;
+    color: #1460e4;
+  }
+
+  #mycontact .ctrl .box1,
+  #mycontact .ctrl .box2 {
+    width: 49.5%;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 #06192f;
+    padding: 16px 0;
+  }
+
+  #mycontact .ctrl .box1 table,
+  #mycontact .ctrl .box2 table {
+    padding: 16px;
+    width: 100%;
+  }
+
+  #mycontact .ctrl .box1 table tr td input,
+  #mycontact .ctrl .box1 table tr td textarea {
+    width: 100%;
+    min-width: 250px;
+    height: 34px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 9px;
+    border: 1px solid #293e3a;
+    background: linear-gradient(135deg, #06192f, #141e30);
+    color: #fff;
+  }
+
+  #mycontact .ctrl .box1 table tr td textarea {
+    height: 90px;
+    resize: vertical;
+    padding: 10px;
+  }
+
+  #mycontact .ctrl .box1 table tr td .input {
+    width: 100%;
+    height: 40px;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #1460e4, #3b007a);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #mycontact .ctrl .box2 .text {
+    padding: 16px;
+    font-size: 18px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  #mycontact .ctrl .box2 .text span {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  #mycontact .ctrl .box2 .text span:last-child {
+    font-size: 15px;
+    color: #b0b0b0;
+  }
+
+  #mycontact .ctrl .box2 .text span a {
+    font-size: 17px;
+    color: #1460e4;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    padding: 0px 40px 0px 40px;
+  }
+  .header .brand {
+    width: 22%;
+    padding-left: 20px;
+  }
+  .header .brand a h1 {
+    font-size: 20px;
+  }
+  .header .list {
+    width: 63%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+  }
+  .header .list ul li,
+  .header .list ul li a {
+    font-size: 17px;
+    margin: auto 8px;
+  }
+  .header #logo {
+    display: none;
+  }
+  #home {
+    padding: 100px 0px 40px 0px;
+    text-align: center;
+    min-height: unset;
+    height: fit-content;
+  }
+  #home .description {
+    width: 70%;
+    float: none;
+    padding-left: 60px;
+    text-align: center;
+  }
+  #home .description .p {
+    font-size: 36px;
+  }
+  #home .description .p .txt,
+  #home .description .p .text {
+    font-size: 36px;
+  }
+  #home .description .p span {
+    font-size: 48px;
+  }
+  #home .description .p2 {
+    font-size: 18px;
+  }
+  #home .description button {
+    width: 170px;
+    height: 44px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  #home .profile,
+  #home .profile img {
+    display: none;
+  }
+
+  #aboutme {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  #aboutme .des {
+    height: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutme .des p {
+    font-size: 19px;
+    line-height: 1.7;
+    padding: 10px 0px 30px 0px;
+    text-indent: 20px;
+    text-align: center;
+    word-break: break-word;
+    letter-spacing: 0.2px;
+    color: #e0e0e0;
+    background: rgba(20, 30, 48, 0.15);
+    border-radius: 8px;
+  }
+  #aboutme .des a button {
+    width: 170px;
+    height: 38px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  #myskill {
+    height: auto;
+    padding: 18px;
+  }
+  #myskill .skills {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #myskill h1 {
+    padding: 20px 0px 0px 25%;
+    font-size: 28px;
+  }
+  .skills .chip {
+    height: 25px;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  #mycontact {
+    height: auto;
+  }
+  #mycontact .ctrl {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #myproject .skills {
+    width: 80%;
+    margin: auto;
+    display: grid;
+  }
+
+  #myproject .skills details {
+    padding: 15px;
+    border: 1px solid #293e3a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #06192f;
+    background: linear-gradient(135deg, #06192f, #141e30);
+  }
+
+  #myproject .skills details summary {
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  #myproject .skills details .project {
+    margin: 10px 0px 0px 20px;
+    font-size: 18px;
+  }
+
+  #myproject .skills details .project a {
+    text-decoration: none;
+    color: #1460e4;
+  }
+
+  #mycontact .ctrl .box1,
+  #mycontact .ctrl .box2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 #06192f;
+    padding: 12px 0;
+  }
+
+  #mycontact .ctrl .box1 table,
+  #mycontact .ctrl .box2 table {
+    padding: 12px;
+    width: 100%;
+  }
+
+  #mycontact .ctrl .box1 table tr td input,
+  #mycontact .ctrl .box1 table tr td textarea {
+    width: 100%;
+    min-width: 220px;
+    height: 32px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid #293e3a;
+    background: linear-gradient(135deg, #06192f, #141e30);
+    color: #fff;
+  }
+
+  #mycontact .ctrl .box1 table tr td textarea {
+    height: 80px;
+    resize: vertical;
+    padding: 10px;
+  }
+
+  #mycontact .ctrl .box1 table tr td .input {
+    width: 100%;
+    height: 38px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1460e4, #3b007a);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  #mycontact .ctrl .box2 .text {
+    padding: 12px;
+    font-size: 17px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  #mycontact .ctrl .box2 .text span {
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  #mycontact .ctrl .box2 .text span:last-child {
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+
+  #mycontact .ctrl .box2 .text span a {
+    font-size: 16px;
+    color: #1460e4;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header {
+    padding: 0px 30px 0px 30px;
+  }
+  .header .brand {
+    width: 25%;
+    padding-left: 10px;
+  }
+  .header .brand a h1 {
+    font-size: 18px;
+  }
+  .header .list {
+    width: 65%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+  }
+  .header .list ul li,
+  .header .list ul li a {
+    font-size: 16px;
+    margin: auto 6px;
+  }
+  .header #logo {
+    display: none;
+  }
+  #home {
+    padding: 80px 0px 40px 0px;
+    text-align: center;
+    min-height: unset;
+    height: fit-content;
+  }
+  #home .description {
+    width: 80%;
+    float: none;
+    padding-left: 30px;
+    text-align: center;
+  }
+  #home .description .p {
+    font-size: 32px;
+  }
+  #home .description .p .txt,
+  #home .description .p .text {
+    font-size: 32px;
+  }
+  #home .description .p span {
+    font-size: 44px;
+  }
+  #home .description .p2 {
+    font-size: 17px;
+  }
+  #home .description button {
+    width: 160px;
+    height: 42px;
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  #home .profile,
+  #home .profile img {
+    display: none;
+  }
+
+  #aboutme {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  #aboutme .des {
+    height: auto;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutme .des p {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 10px 0px 30px 0px;
+    text-indent: 20px;
+    text-align: center;
+    word-break: break-word;
+    letter-spacing: 0.2px;
+    color: #e0e0e0;
+    background: rgba(20, 30, 48, 0.15);
+    border-radius: 8px;
+  }
+  #aboutme .des a button {
+    width: 160px;
+    height: 36px;
+    font-size: 17px;
+    margin-left: 10px;
+  }
+  #myskill {
+    height: auto;
+    padding: 15px;
+  }
+  #myskill .skills {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #myskill h1 {
+    padding: 20px 0px 0px 30%;
+    font-size: 26px;
+  }
+  .skills .chip {
+    height: 25px;
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+  #mycontact {
+    height: auto;
+  }
+  #mycontact .ctrl {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #myproject .skills {
+    width: 80%;
+    margin: auto;
+    display: grid;
+  }
+
+  #myproject .skills details {
+    padding: 15px;
+    border: 1px solid #293e3a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #06192f;
+    background: linear-gradient(135deg, #06192f, #141e30);
+  }
+
+  #myproject .skills details summary {
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  #myproject .skills details .project {
+    margin: 10px 0px 0px 20px;
+    font-size: 18px;
+  }
+
+  #myproject .skills details .project a {
+    text-decoration: none;
+    color: #1460e4;
+  }
+
+  #mycontact .ctrl .box1,
+  #mycontact .ctrl .box2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 #06192f;
+    padding: 12px 0;
+  }
+
+  #mycontact .ctrl .box1 table,
+  #mycontact .ctrl .box2 table {
+    padding: 12px;
+    width: 100%;
+  }
+
+  #mycontact .ctrl .box1 table tr td input,
+  #mycontact .ctrl .box1 table tr td textarea {
+    width: 100%;
+    min-width: 200px;
+    height: 32px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #293e3a;
+    background: linear-gradient(135deg, #06192f, #141e30);
+    color: #fff;
+  }
+
+  #mycontact .ctrl .box1 table tr td textarea {
+    height: 80px;
+    resize: vertical;
+    padding: 10px;
+  }
+
+  #mycontact .ctrl .box1 table tr td .input {
+    width: 100%;
+    height: 36px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1460e4, #3b007a);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #mycontact .ctrl .box2 .text {
+    padding: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  #mycontact .ctrl .box2 .text span {
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  #mycontact .ctrl .box2 .text span:last-child {
+    font-size: 13px;
+    color: #b0b0b0;
+  }
+
+  #mycontact .ctrl .box2 .text span a {
+    font-size: 15px;
+    color: #1460e4;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .header {
+    padding: 0px 20px 0px 20px;
+  }
+  .header .brand {
+    width: 20%;
+    padding-left: 1px;
+  }
+  .header .brand a h1 {
+    display: none;
+  }
+  .header .list {
+    width: 70%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* font-size: 3px; */
+    overflow-x: auto;
+  }
+  .header .list ul li,
+  .header .list ul li a {
+    font-size: 14px;
+    margin: auto 4px;
+  }
+  .header #logo {
+    display: none;
+  }
+  #home {
+    padding: 60px 0px 60px 0px;
+    text-align: center;
+    min-height: unset;
+    height: fit-content;
+  }
+  #home .description {
+    width: 90%;
+    float: none;
+    padding-left: 20px;
+    text-align: center;
+  }
+  #home .description .p {
+    font-size: 30px;
+  }
+  #home .description .p .txt,
+  #home .description .p .text {
+    font-size: 30px;
+  }
+  #home .description .p span {
+    font-size: 40px;
+  }
+  #home .description .p2 {
+    font-size: 16px;
+  }
+  #home .description button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  #home .profile,
+  #home .profile img {
+    display: none;
+  }
+
+  #aboutme {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  #aboutme .des {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutme .des p {
+    font-size: 17px;
+    line-height: 1.7;
+    padding: 10px 0px 30px 0px;
+    text-indent: 20px;
+    text-align: center;
+    word-break: break-word;
+    letter-spacing: 0.2px;
+    color: #e0e0e0;
+    background: rgba(20, 30, 48, 0.15);
+    border-radius: 8px;
+  }
+  #aboutme .des a button {
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+    padding: 0;
+    margin-left: 10px;
+  }
+  #myskill {
+    height: auto;
+    padding: 10px;
+  }
+  #myskill .skills {
+    height: auto;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+  }
+  #myskill h1 {
+    padding: 20px 0px 0px 40%;
+    font-size: 25px;
+  }
+  .skills .chip {
+    height: 25px;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  #mycontact {
+    height: auto;
+  }
+  #mycontact .ctrl {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #myproject .skills {
+    width: 80%;
+    /* height: 100px; */
+    /* border-radius: 15px; */
+    /* border: 1px solid #293e3a; */
+    margin: auto;
+    /* padding: 20px; */
+    /* box-shadow: 0px 0px 20px 0px #06192f; */
+    /* background: linear-gradient(135deg, #06192f, #141e30); */
+    display: grid;
+  }
+
+  #myproject .skills details {
+    /* margin: 10px; */
+    padding: 15px;
+    border: 1px solid #293e3a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #06192f;
+    background: linear-gradient(135deg, #06192f, #141e30);
+  }
+
+  #myproject .skills details summary {
+    font-size: 20px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    outline: none;
+  }
+
+  #myproject .skills details .project {
+    margin: 10px 0px 0px 20px;
+    font-size: 18px;
+    /* font-weight: bold; */
+  }
+
+  #myproject .skills details .project a {
+    text-decoration: none;
+    color: #1460e4;
+  }
+
+  #mycontact .ctrl .box1,
+  #mycontact .ctrl .box2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 0 #06192f;
+    padding: 12px 0;
+  }
+
+  #mycontact .ctrl .box1 table,
+  #mycontact .ctrl .box2 table {
+    padding: 12px;
+    width: 100%;
+    
+    
+  }
+
+  #mycontact .ctrl .box1 table tr td input,
+  #mycontact .ctrl .box1 table tr td textarea {
+    width: 100%;
+    min-width: 180px;
+    height: 32px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #293e3a;
+    background: linear-gradient(135deg, #06192f, #141e30);
+    color: #fff;
+  }
+
+  #mycontact .ctrl .box1 table tr td textarea {
+    height: 80px;
+    resize: vertical;
+    padding: 10px;
+  }
+
+  #mycontact .ctrl .box1 table tr td .input{
+    width: 100%;
+    height: 35px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1460e4, #3b007a);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #mycontact .ctrl .box2 .text {
+    padding: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  #mycontact .ctrl .box2 .text span {
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  #mycontact .ctrl .box2 .text span:last-child {
+    font-size: 13px;
+    color: #b0b0b0;
+  }
+
+  #mycontact .ctrl .box2 .text span a {
+    font-size: 14px;
+    color: #1460e4;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+
+}
+
